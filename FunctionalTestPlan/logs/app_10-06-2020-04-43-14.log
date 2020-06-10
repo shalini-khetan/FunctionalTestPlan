@@ -1,0 +1,11 @@
+2020-06-10 16:43:16 INFO  Quarantine:16 - Fetching value from database before ASG restart
+2020-06-10 16:43:17 INFO  Quarantine:18 - Fetched value before ASG restart[74976637, Link, 0, 74976637, Price, 0]
+2020-06-10 16:43:17 INFO  Quarantine:25 - Service is going to restart
+2020-06-10 16:43:17 INFO  Quarantine:27 - Restarted
+2020-06-10 16:43:17 INFO  Quarantine:32 - Fetching value from database after ASG restart
+2020-06-10 16:43:17 INFO  Quarantine:34 - Fetched value before ASG restart[74976637, Link, 0, 74976637, Price, 0]
+2020-06-10 16:43:17 INFO  DatabaseQuery:38 - Values are same
+2020-06-10 16:43:17 INFO  Wireless_sync:20 - Adding wireless sync properties in customer properties
+2020-06-10 16:43:17 INFO  Updateconfig:59 - Updated the customer.properties file
+2020-06-10 16:43:18 INFO  Wireless_sync:20 - Adding wireless sync properties in customer properties
+2020-06-10 16:43:18 INFO  Updateconfig:59 - Updated the customer.properties file

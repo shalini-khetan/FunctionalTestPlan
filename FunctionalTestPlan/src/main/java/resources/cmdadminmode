@@ -1,0 +1,12 @@
+How to open command prompt in  admin mode
+Step 1: Open up Windows Explorer, navigate to the following directory to find Command Prompt shortcut.
+
+C:\Users\YourUserName\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Accessories
+
+(C is your Windows drive and YourUserName is your user account name)
+
+In Windows 8, the Command Prompt shortcut is located in Programs\Windows System directory.
+
+Step 2: Here, you should find Command Prompt shortcut. Right-click on the Command Prompt shortcut, click Properties. Switch to Shortcut tab, click on Advanced, check Run as administrator, finally click Ok and then Apply.
+
+//start eclipse also in admin mode

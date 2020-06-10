@@ -1,0 +1,46 @@
+2020-06-09 13:39:27 INFO  Base:53 - Opening ASGC-http://localhost:8080/altierre/asg
+2020-06-09 13:39:27 INFO  Base:55 - Login page is displayed
+2020-06-09 13:39:31 INFO  Base:64 - Login is successful
+2020-06-09 13:39:31 INFO  RetailOps:61 - Switch to first frame of retail ops
+2020-06-09 13:39:31 INFO  RetailOps:64 - Switch to second frame of retail ops
+2020-06-09 13:39:32 INFO  RetailOps:83 - Retail Ops operation is success
+2020-06-09 13:39:47 INFO  Base:53 - Opening ASGC-http://localhost:8080/altierre/asg
+2020-06-09 13:39:47 INFO  Base:55 - Login page is displayed
+2020-06-09 13:39:50 INFO  Base:64 - Login is successful
+2020-06-09 13:39:50 INFO  RetailOps:61 - Switch to first frame of retail ops
+2020-06-09 13:39:50 INFO  RetailOps:64 - Switch to second frame of retail ops
+2020-06-09 13:39:51 INFO  RetailOps:83 - Retail Ops operation is success
+2020-06-09 13:39:57 INFO  Quarantine:16 - Fetching value from database before ASG restart
+2020-06-09 13:39:58 INFO  Quarantine:18 - Fetched value before ASG restart[74976637, Link, 0, 74976637, Price, 0]
+2020-06-09 13:39:58 INFO  Quarantine:25 - Service is going to restart
+2020-06-09 13:39:58 INFO  Quarantine:27 - Restarted
+2020-06-09 13:39:58 INFO  Quarantine:32 - Fetching value from database after ASG restart
+2020-06-09 13:39:58 INFO  Quarantine:34 - Fetched value before ASG restart[74976637, Link, 0, 74976637, Price, 0]
+2020-06-09 13:39:58 INFO  DatabaseQuery:42 - Values are same
+2020-06-09 13:39:58 INFO  Wireless_sync:32 - Adding wireless sync properties in customer properties
+2020-06-09 13:39:58 INFO  Updateconfig:59 - Updated the customer.properties file
+2020-06-09 13:40:06 INFO  Base:53 - Opening ASGC-http://localhost:8080/altierre/asg
+2020-06-09 13:40:06 INFO  Base:55 - Login page is displayed
+2020-06-09 13:40:09 INFO  Base:64 - Login is successful
+2020-06-09 13:40:09 INFO  Wireless_sync:61 - Switched to first frame of wireless sync
+2020-06-09 13:40:09 INFO  Wireless_sync:69 - Wireless Sync Option is exist
+2020-06-09 13:40:09 INFO  Wireless_sync:74 - Switched to second frame of wireless sync
+2020-06-09 13:40:09 INFO  Wireless_sync:77 - Switched to third frame of wireless sync
+2020-06-09 13:40:10 INFO  Updateconfig:45 -  The specific Line is:		<syncZone name="Sync" >
+2020-06-09 13:40:11 INFO  Updateconfig:45 -  The specific Line is:		<syncZone name="Sync" >
+2020-06-09 13:40:26 INFO  Base:53 - Opening ASGC-http://localhost:8080/altierre/asg
+2020-06-09 13:40:26 INFO  Base:55 - Login page is displayed
+2020-06-09 13:40:28 INFO  Base:64 - Login is successful
+2020-06-09 13:40:28 INFO  Autoconfig:52 - Switched to first frame of autoconfig sync
+2020-06-09 13:40:28 INFO  Autoconfig:55 - AAP Admin Option is exist
+2020-06-09 13:40:29 INFO  Autoconfig:58 - Clicked on AAP admin button
+2020-06-09 13:40:29 INFO  Autoconfig:60 - Switched to second frame of autoconfig sync
+2020-06-09 13:40:29 INFO  Autoconfig:63 - Switched to third frame of autoconfig sync
+2020-06-09 13:41:13 INFO  Base:53 - Opening ASGC-http://localhost:8080/altierre/asg
+2020-06-09 13:41:13 INFO  Base:55 - Login page is displayed
+2020-06-09 13:41:16 INFO  Base:64 - Login is successful
+2020-06-09 13:41:16 INFO  Autoconfig:52 - Switched to first frame of autoconfig sync
+2020-06-09 13:41:16 INFO  Autoconfig:55 - AAP Admin Option is exist
+2020-06-09 13:41:17 INFO  Autoconfig:58 - Clicked on AAP admin button
+2020-06-09 13:41:17 INFO  Autoconfig:60 - Switched to second frame of autoconfig sync
+2020-06-09 13:41:17 INFO  Autoconfig:63 - Switched to third frame of autoconfig sync

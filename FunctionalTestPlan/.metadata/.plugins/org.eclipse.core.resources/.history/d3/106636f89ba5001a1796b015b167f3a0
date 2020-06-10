@@ -1,0 +1,95 @@
+package stepDefinitions;
+
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.concurrent.TimeUnit;
+import org.apache.log4j.Logger;
+import org.openqa.selenium.By;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
+
+import cucumber.api.Scenario;
+import cucumber.api.java.After;
+import cucumber.api.java.en.Given;
+import cucumber.api.java.en.Then;
+import cucumber.api.java.en.When;
+import pageObjects.HomePage;
+import pageObjects.WirelessSync;
+import resources.DatabaseQuery;
+import resources.Servicerestart;
+import resources.Updateconfig;
+import resources.base;
+
+public class Wireless_sync extends base {
+public  static Logger log =Logger.getLogger(Wireless_sync.class.getName());
+	@Given("^Initialize the browser with chrome$")
+	public void initialize_the_browser_with_chrome() throws Throwable {
+		driver=initializeDriver();
+	   
+	}
+
+	@Given("^Set property for wireless sync into customer properties$")
+	public void set_property_for_wireless_sync_into_customer_properties() throws Throwable {
+	    System.out.println("2nd step");
+	}
+
+	@Given("^Restart the ASG$")
+	public void restart_the_ASG() throws Throwable {
+		System.out.println("3rd step");
+	   
+	}
+
+	@When("^Redirect to the ASGC \"([^\"]*)\"$")
+	public void redirect_to_the_ASGC(String arg1) throws Throwable {
+		driver.get(arg1);
+	}
+
+	@When("^login into ASG with username \"([^\"]*)\" and password \"([^\"]*)\"$")
+	public void login_into_ASG_with_username_and_password(String arg1, String arg2) throws Throwable {
+		login();
+	}
+
+	@Then("^Add Wireless sync with name \"([^\"]*)\" and description \"([^\"]*)\" and perform other action$")
+	public void add_Wireless_sync_with_name_and_description_and_perform_other_action(String arg1, String arg2) throws Throwable {
+		WirelessSync w=new WirelessSync(driver);
+		HomePage H= new HomePage(driver);
+		H.adminmMenu().click();
+		driver.switchTo().frame(w.frame1());
+		System.out.println("Switch to first frame");
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		if (driver.findElements(By.xpath("//span[text()='Wireless Sync']")).size() != 0) {
+			System.out.println("\nWireless Sync Option is exist");
+		    driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+			w.wirelesslink().click();
+			driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+			driver.switchTo().frame(w.frame2());
+			System.out.print("Switch to second frame");
+			driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+			driver.switchTo().frame(w.frame3());
+			System.out.print("\nSwitch to third frame");
+			driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+			w.addSyncButton().click();
+			w.groupName().sendKeys("Name of ASG Sync Group");
+			w.groupDesc().sendKeys(" Description of ASG Sync Group");
+			w.save().click();	
+			Updateconfig.read();
+			w.edit().click();
+			w.back().click();
+			w.delete().click();
+			Updateconfig.read();
+
+		}
+		else  {
+		System.out.println( "Wireless_sync is not exist");
+		}
+	}
+
+	@Then("^Close  the browser$")
+	public void close_the_browser() throws Throwable {
+	   driver.close();
+	}
+
+}

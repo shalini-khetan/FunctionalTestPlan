@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Functionaltestplan]">
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="Infomil.Wirlesssync">
+        <methods>
+          <include name="wireless"/>
+        </methods>
+      </class> <!-- Infomil.Wirlesssync -->
+      <class name="Infomil.Retailops">
+        <methods>
+          <include name="retailOps"/>
+        </methods>
+      </class> <!-- Infomil.Retailops -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Functionaltestplan] -->
